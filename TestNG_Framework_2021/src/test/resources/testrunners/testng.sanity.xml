@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="DemoQA Sanity Full" verbose = "3">
+  
+  	<listeners>
+  		<listener class-name = "com.demoqa.listeners.ExtentReportListener"/>
+  		<listener class-name = "com.demoqa.listeners.TestAllureListener"/>
+  	</listeners>
+  	
+  <test thread-count="5" verbose="2" name="DemoQA Sanity">
+  	
+    <classes>
+      <!-- <class name="com.demoqa.test.HomePageTest"/> --> 
+      <class name="com.demoqa.test.LoginPageTest"/>
+    </classes>
+    
+  </test> <!-- Default test -->
+  
+</suite> <!-- Default suite -->
